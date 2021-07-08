@@ -5,13 +5,13 @@ package devcalc;
 import java.util.Scanner;
 
 // 3 - Classe
-public class Calc {
+public class Calc<num1, num2> {
 
     // 3.1 Atributos
     static Scanner entrada = new Scanner(System.in); // entrada = input
 
     // 3.2 Métodos e funções
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         // Exibe o menu da calculadora
         System.out.println(">>> CALCULADORA <<<");
@@ -36,11 +36,19 @@ public class Calc {
         }
 
         // Chama função do calculo desejado
-        switch (opcao){
+        switch (opcao) {
             case 1:
                 System.out.println(somarDoisNumeros(num1, num2));
                 break;
-
+            case 2:
+                System.out.println(subtrairDoisNumeros(num1, num2));
+                break;
+            case 3:
+                System.out.println(multiplicarDoisNumeros(num1, num2));
+                break;
+            case 4:
+                System.out.println(dividirDoisNumeros(num1, num2));
+                break;
             default:
                 System.out.println("Opcao invalida");
                 break;
@@ -49,7 +57,29 @@ public class Calc {
 
     }
 
-    public static int somarDoisNumeros(int num1, int num2){
+    public static int somarDoisNumeros(int num1, int num2) {
+
         return num1 + num2;
+    }
+
+    public static int subtrairDoisNumeros(int num1, int num2) {
+
+        return num1 - num2;
+    }
+
+    public static int multiplicarDoisNumeros(int num1, int num2) {
+
+        return num1 * num2;
+    }
+
+    public static int dividirDoisNumeros(int num1, int num2) {
+        try {
+            return num1 / num2;
+        }
+        catch (Exception e){
+            System.out.println("Divisão inválida: " + e.getMessage());
+            return num1;
+        }
+
     }
 }

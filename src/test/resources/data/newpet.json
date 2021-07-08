@@ -1,0 +1,23 @@
+{
+  "id": 1124,
+  "category": {
+    "id": 1,
+    "name": "dog"
+  },
+  "name": "Abreu",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 3,
+      "name": "animal vermifugado na primeira semana"
+    },
+    {
+      "id": 4,
+      "name": "animal vermifugado na segunda semana"
+    }
+
+  ],
+  "status": "sold"
+}
