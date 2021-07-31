@@ -31,7 +31,7 @@ Funcionalidade: Comprar Curso CS
 
     Cenario: Ver Detalhes de Um Curso
       Dado que acesso o site da Iterasys
-      E clico no botão OK do popup da LGPD
+      E clico no botão Ok do popup da LGPD
       Quando clico na imagem de um curso
       Entao vejo a pagina com detalhes do curso
 
